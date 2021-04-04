@@ -10,7 +10,8 @@ struct field_point{
    Point position;
    double orientation[2];
    double confidence;
-   };```
+   };
+```
 
 * type:
    * 0: L
