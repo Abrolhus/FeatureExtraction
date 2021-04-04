@@ -10,15 +10,16 @@ struct field_point{
    Point position;
    double orientation[2];
    double confidence;
-   };```
+   };
+```
 
-* type:
+* **type**:
    * 0: L
    * 1: T
    * 2: ???
    * 3: X
-* position.x, position.y : as posições em x e y na imagem respectivamente
-* confidence: o grau de confiança, o quanto o algorítmo acredita que seja uma feature.
-* orientation: orientação/rotação em x,y da feature
+* **position.x, position.y**: as posições em x e y na imagem respectivamente
+* **confidence**: o grau de confiança, o quanto o algorítmo acredita que seja uma feature.
+* **orientation**: orientação/rotação em x,y da feature
 
 
