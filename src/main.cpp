@@ -23,9 +23,6 @@
 using namespace cv;
 using namespace std;
 
-//#define VIDEO
-
-
 int main(int argc, char **argv)
 {
 	vector<field_point> result_intersections;
@@ -35,15 +32,7 @@ int main(int argc, char **argv)
 	img_rgb = imread(argv[1], CV_LOAD_IMAGE_COLOR);
 
 	// clustering(img_rgb);
-	//extract_features(img_rgb, result_intersections, goalPosts);
-	for (int i = 0; i < goalPosts.size(); i++)
-	{
-		//cout << "Feature " << i << endl;
-		//dis_bear test = pixel2dis_bear(normalizePixelPosition(img_rgb, goalPosts[i].root_position));
-		//cout << "distance " << test.distance << endl;
-		//cout << "angle " << test.bearing << endl;
-		//cout << "--------------" << endl;
-	}
+	extract_features(img_rgb, result_intersections, goalPosts);
 
 	for (int i = 0; i < result_intersections.size(); i++)
 	{
